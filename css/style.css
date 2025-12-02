@@ -1062,19 +1062,23 @@ div#about-developer {
   }
 .mobile-section {
     position: fixed;
-    bottom: 0;
+    bottom: -80px; /* hidden below screen */
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    z-index: 9999;
-    background: #ffffff;
+    background: #fff;
     border-top: 1px solid #ddd;
+    z-index: 9999;
+    transition: bottom 0.4s ease; /* smooth slide-up */
+}
+
+.mobile-section.show {
+    bottom: 0; /* slide up when scrolling */
 }
 
 .mobile-section a {
     width: 33.33%;
-    padding: 10px 0;
+    padding: 6px 0;
     text-align: center;
     background: #f7f7f7;
     border-right: 1px solid #ddd;
@@ -1092,9 +1096,9 @@ div#about-developer {
 }
 
 .mobile-section img {
-    width: 28px;
-    height: 28px;
-    margin-bottom: 4px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
 }
 
 
