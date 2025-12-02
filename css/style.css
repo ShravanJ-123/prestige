@@ -824,18 +824,64 @@ div#about-developer {
     .banner-new-design .banner-details div:not(:last-child) {border-right:none;border-bottom: 1px solid #c2b48e;}
     .banner-new-design .banner-details { flex-direction: column;}
 
-    .banner-new-design .banner-details .banner-status:hover, .banner-new-design .banner-details .banner-price:hover {background: unset;}
-    .banner-new-design .banner-details .banner-typology, .banner-new-design .banner-details .banner-plan {background: #e7dbcf;}
-    .banner-new-design .banner-details .banner-status:hover h5, .banner-new-design .banner-details .banner-price:hover h5,.banner-new-design .banner-details .banner-status:hover h4, .banner-new-design .banner-details .banner-price:hover h4 {color: #ffffff;font-weight: 400;}
-    .banner-new-design .banner-details .banner-typology h4, .banner-new-design .banner-details .banner-plan h4, .banner-new-design .banner-details .banner-typology h5, .banner-new-design .banner-details .banner-plan h5 {color: #000000; font-weight: 500;}
-    .banner-new-design .banner-details .banner-status h4, .banner-new-design .banner-details .banner-typology h4, .banner-new-design .banner-details .banner-price h4, .banner-new-design .banner-details .banner-plan h4 { font-size: 12px; letter-spacing: 1.2px; }
-    .banner-new-design .banner-details .banner-typology h5::after, .banner-new-design .banner-details .banner-plan h5::after {background: #0000009c;}
-    .banner-new-design .banner-details {border: 1px solid #c2b48ec9;}
-    .banner-new-design .banner-details .banner-status h5, .banner-new-design .banner-details .banner-typology h5, .banner-new-design .banner-details .banner-price h5, .banner-new-design .banner-details .banner-plan h5 { font-size: 12px;padding-bottom: 8px; }
-    .price-ban{font-size: 18px !important;}
+    .banner-new-design .banner-details .banner-status:hover,
+    .banner-new-design .banner-details .banner-price:hover {
+        background: unset;
+    }
 
+    .banner-new-design .banner-details .banner-typology,
+    .banner-new-design .banner-details .banner-plan {
+        background: #e7dbcf;
+    }
 
+    .banner-new-design .banner-details .banner-status:hover h5,
+    .banner-new-design .banner-details .banner-price:hover h5,
+    .banner-new-design .banner-details .banner-status:hover h4,
+    .banner-new-design .banner-details .banner-price:hover h4 {
+        color: #000000;
+        font-weight: 400;
+        font-size: 13px;
+    }
 
+    .banner-new-design .banner-details .banner-typology h4,
+    .banner-new-design .banner-details .banner-plan h4,
+    .banner-new-design .banner-details .banner-typology h5,
+    .banner-new-design .banner-details .banner-plan h5 {
+        color: #000000;
+        font-weight: 500;
+    }
+
+    .banner-new-design .banner-details .banner-status h4,
+    .banner-new-design .banner-details .banner-typology h4,
+    .banner-new-design .banner-details .banner-price h4,
+    .banner-new-design .banner-details .banner-plan h4 {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .banner-new-design .banner-details .banner-typology h5::after,
+    .banner-new-design .banner-details .banner-plan h5::after {
+        background: #0000009c;
+    }
+
+    .banner-new-design .banner-details {
+        border: 1px solid #c2b48ec9;
+    }
+
+    .banner-new-design .banner-details .banner-status h5,
+    .banner-new-design .banner-details .banner-typology h5,
+    .banner-new-design .banner-details .banner-price h5,
+    .banner-new-design .banner-details .banner-plan h5 {
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+    .banner-new-design .banner-details h5::after {
+    background: #000 !important;
+    }
+
+    .price-ban {
+        font-size: 18px !important;
+    }
 
     .section-head h2 {color: var(--primary-color);font-weight: 300;letter-spacing: 2px;font-size: 24px;line-height: 34px;}
     .section-head::before {height: 30%;background-size: 100%;}
@@ -967,9 +1013,7 @@ div#about-developer {
 
     .loc-det::before {left: 50%;transform: translateX(-50%);height: 120%;background-size: 340px;}
 
-    .mobile-section {position: fixed;bottom: 0;width: 100%;background: var(--primary-color);border-top: 1px solid #f8f5e761;z-index: 99;padding: 5px;display: block;display: flex;}
     .mobile-section a {text-align: center;color: #fff;padding: 5px;font-size: 12px;letter-spacing: 1px;flex: 1;}
-    .mobile-section a:not(:last-child){border-right: 1px solid #f8f5e8;}
 
     .developer-content p {font-size: 11px;line-height: 24px;}
     .builder-logo img {width: 80px;}
@@ -1016,5 +1060,33 @@ div#about-developer {
     color: #000;
     font-weight: 500;
   }
+  .mobile-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
 }
-    
+
+.mobile-section a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-section img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+}
+
