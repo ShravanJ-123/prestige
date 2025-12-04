@@ -14,7 +14,8 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slide-to-submit.css">
+
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
     <style>
@@ -330,10 +331,15 @@ document.addEventListener("DOMContentLoaded", function () {
                                 
                                 
                             </div>
-                            <div class="know-more-btn">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Know More <img class="img-fluid" src="images/right-arrow.png" alt=""></a>
+<div class="know-more-btn">
+    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Know More
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#1ecbe1" style="margin-left:8px;">
+            <path d="M10 6l6 6-6 6" stroke="#1ecbe1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -369,7 +375,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="animated-price-btn">
                                 <a href="#" class="btn-inner" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <span class="start-text">Starting</span>
-                                    <span>₹ 35cr</span>
+                                    <span style="font-size: 20px; font-weight: 700;">₹ 35cr</span>
                                 </a>
                             </div>
                         </div>
@@ -435,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <style>
         /* CSS Variables based on original design */
         :root {
-            --primary-gold: #ba9a50;
+            --primary-gold: #3a7ca5;
             --primary-bg: #fffdf9;
             --text-gray: #6d6d6d;
         }
@@ -461,7 +467,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .section-title {
             text-align: center;
-            color: var(--primary-gold);
+            color: var(--primary-color);
             font-size: 35px;
             font-weight: 700;
             margin-bottom: 40px;
@@ -472,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function () {
             background: #fff;
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 0 14px -8px var(--primary-gold);
+            box-shadow: 0 0 14px -8px var(--primary-color);
             transition: transform 0.5s ease, box-shadow 0.5s ease;
             height: 100%;
             display: flex;
@@ -482,7 +488,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .plan-card:hover {
             transform: scale(1.02);
-            box-shadow: 0 0 20px -5px var(--primary-gold);
+            box-shadow: 0 0 20px -5px var(--primary-color);
         }
 
         .image-container {
@@ -580,7 +586,7 @@ document.addEventListener("DOMContentLoaded", function () {
             left: -50%;
             width: 200%;
             height: 200%;
-            background: conic-gradient(from 0deg, transparent 0deg, transparent 300deg, var(--primary-gold) 360deg);
+            background: conic-gradient(from 0deg, transparent 0deg, transparent 300deg, var(--primary-color) 360deg);
             animation: rotate-border 4s linear infinite;
             z-index: -1;
         }
@@ -593,11 +599,11 @@ document.addEventListener("DOMContentLoaded", function () {
         /* Actual Button Inner */
         .btn-inner {
             background: #fff;
-            color: var(--primary-gold);
+            color: var(--primary-color);
             border: none;
             border-radius: 10px;
             padding: 8px 25px;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 700;
             display: flex;
             align-items: center;
@@ -613,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .start-text {
-            font-size: 12px;
+            font-size: 15px;
             color: #999;
             text-transform: uppercase;
             font-weight: 400;
@@ -629,6 +635,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     </style>
+
+
    <div class="location-section p-100" id="location-advantages">
         <div class="container">
             <div class="section-heading">
@@ -715,7 +723,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-md-5">
                     <div class="location-map-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         
-                        <img class="img-fluid" src="images/location-map.png" alt="" style="filter: blur(2px);">
+                        <img class="img-fluid" src="images/location-map.png" alt="" >
                         
                     </div>
                 </div>
@@ -723,7 +731,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
 
-    <section class="Aminities" id="Aminities" data-element="">
+
+    <section class="Aminities" id="Aminities">
         <div class="container">
             <div class="top">
                 <div class="sectitle HistoryPro appearText">Amenities</div>
@@ -731,115 +740,124 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="amiOuter">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- 
-                           Mobile Layout Note:
-                           The alternating col-5 and col-7 classes create 
-                           a specific mosaic grid layout on mobile screens.
-                        -->
+                        
+                        <!-- ID amiBtn is crucial for the CSS overrides -->
                         <div class="row" id="amiBtn">
                             
-                            <!-- Row 1 -->
+                            <!-- 1. Luxury Jacuzzi (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/jacuzzi.webp">
+                                    <img loading="lazy" alt="Luxury Jacuzzi" src="images/jacuzzi.webp">
                                 </div>
                                 <div class="imgtext">
                                     Luxury Jacuzzi
                                 </div>
                             </div>
+                            
+                            <!-- 2. Swimming Pool (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/swimmingpool.webp">
+                                    <img loading="lazy" alt="Swimming Pool" src="images/swimmingpool.webp">
                                 </div>
                                 <div class="imgtext">
-                                    Swiming pool
+                                    Swimming pool
                                 </div>
                             </div>
-
-                            <!-- Row 2 -->
+                            
+                            <!-- 3. Clubhouse (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/clubhouse.webp">
+                                    <img loading="lazy" alt="Clubhouse" src="images/clubhouse.webp">
                                 </div>
                                 <div class="imgtext">
                                     Clubhouse
                                 </div>
                             </div>
+                            
+                            <!-- 4. Banquet Hall (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/banquet.webp">
+                                    <img loading="lazy" alt="Banquet Hall" src="images/banquet.webp">
                                 </div>
                                 <div class="imgtext">
                                     Banquet Hall
                                 </div>
                             </div>
-
-                            <!-- Row 3 -->
+                            
+                            <!-- 5. Yoga Room (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/yoga.webp">
+                                    <img loading="lazy" alt="Yoga Room" src="images/yoga.webp">
                                 </div>
                                 <div class="imgtext">
                                     Yoga Room
                                 </div>
                             </div>
+                            
+                            <!-- 6. Gym (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/gym.webp">
+                                    <img loading="lazy" alt="Gym" src="images/gym.webp">
                                 </div>
                                 <div class="imgtext">
                                     Gym
                                 </div>
                             </div>
-
-                            <!-- Row 4 -->
+                            
+                            <!-- 7. Spa (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/spa.webp">
+                                    <img loading="lazy" alt="Spa" src="images/spa.webp">
                                 </div>
                                 <div class="imgtext" style="margin-bottom: 0px">
                                     Spa
                                 </div>
                             </div>
+                            
+                            <!-- 8. Cafe (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/cafe.webp">
+                                    <img loading="lazy" alt="Cafe" src="images/cafe.webp">
                                 </div>
                                 <div class="imgtext" style="margin-bottom: 0px">
                                     Cafe
                                 </div>
                             </div>
 
-                            <!-- Row 5 -->
+                            <!-- 9. Badminton Court (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/badminton.webp">
+                                    <img loading="lazy" alt="Badminton Court" src="images/badminton.webp">
                                 </div>
                                 <div class="imgtext">
                                     Badminton Court
                                 </div>
                             </div>
+                            
+                            <!-- 10. Squash Court (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/squash.webp">
+                                    <img loading="lazy" alt="Squash Court" src="images/squash.webp">
                                 </div>
                                 <div class="imgtext">
                                     Squash Court
                                 </div>
                             </div>
 
-                            <!-- Row 6 -->
+                            <!-- 11. Footsal Court (Large) -->
                             <div class="col-7 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/footsal.webp">
+                                    <img loading="lazy" alt="Footsal Court" src="images/footsal.webp">
                                 </div>
                                 <div class="imgtext" style="margin-bottom: 0px">
                                     Footsal Court
                                 </div>
                             </div>
+                            
+                            <!-- 12. Garden (Small) -->
                             <div class="col-5 col-md-3 appearText">
                                 <div class="imgBtn zoomIn">
-                                    <img loading="lazy" alt="Prestige Nautilus" src="images/garden.webp">
+                                    <img loading="lazy" alt="Garden" src="images/garden.webp">
                                 </div>
                                 <div class="imgtext" style="margin-bottom: 0px">
                                     Garden
@@ -852,85 +870,108 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </section>
-    <style>
-        /* --- Base Fonts & Global Overrides --- */
-        @font-face {
-            font-family: HistoryPro;
-            /* Update path to your font file */
-            src: url(../fonts/HistoryPro-Two.woff2); 
-        }
-
-        .HistoryPro {
-            font-family: HistoryPro, serif;
-        }
-
+     <style>
+        /* --- General Reset & Fonts --- */
         body {
             color: #6d6d6d;
+            font-family: 'Nanum Myeongjo', serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: #fff;
         }
 
-        .row {
-            max-width: unset;
+        .HistoryPro {
+            font-family: 'Cinzel', serif; /* Matching the gold title font */
         }
 
-        /* --- Section Styling --- */
+        /* --- Section Styles --- */
         .Aminities {
             position: relative;
             padding: 4% 0;
             width: 100%;
-            overflow: hidden;
         }
 
         .Aminities .container {
             position: relative;
             overflow: hidden;
+            max-width: 1140px; /* Standard Bootstrap container */
+            margin: 0 auto;
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .sectitle {
             font-size: 35px;
             text-align: center;
-            color: #ba9a50;
+            color: #3a7ca5; /* Gold Color */
             margin-bottom: 15px;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .appearText {
-            opacity: 1; /* Set to 1 for display, originally 0 with JS animation */
-            transition: 0.2s ease-out;
-            /* transform: scale(0.8); Remove scale if no JS to animate it in */
+        /* --- Scoped Grid System for Amenities --- */
+        /* Using ID #amiBtn to override global website styles */
+        
+        #amiBtn.row {
+            /* Fix horizontal scrolling/gaps */
+            margin-right: -10px !important; 
+            margin-left: -10px !important;
+            max-width: none !important;
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        /* --- Image Button & Text Styling --- */
+        #amiBtn > div[class*='col-'] {
+            /* Consistent spacing between items */
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            padding-top: 0 !important;
+            margin-bottom: 20px !important;
+        }
+
+        /* --- Amenity Card Styles --- */
         .Aminities .imgBtn {
             border-radius: 12px;
             display: block;
-            height: 170px;
+            height: 170px; /* Desktop Height */
             overflow: hidden;
-            box-shadow: 0 0 14px -10px #ba9a50;
+            box-shadow: 0 0 14px -10px #ba9a50; /* Gold Shadow */
+            position: relative;
             cursor: pointer;
+            width: 100%;
         }
 
         .Aminities .imgBtn img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s ease;
         }
 
         .Aminities .imgtext {
             text-align: center;
+            margin-top: 8px;
             margin-bottom: 5px;
-            margin-top: 5px; /* Added slight margin for visual balance */
+            font-size: 16px;
+            color: #4a4a4a;
         }
 
-        /* --- Hover Effects --- */
+        .appearText {
+            opacity: 1;
+            transition: 0.2s ease-out;
+        }
+
         .zoomIn {
             transition: 0.5s ease-out;
         }
-
+        
         .zoomIn:hover {
-            transform: scale(1.02) !important;
+            transform: scale(1.02);
             box-shadow: 0 0 20px -5px #ba9a50 !important;
         }
 
@@ -941,16 +982,33 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .Aminities .container {
-                text-align: center;
                 width: 100vw;
+                padding-left: 15px;
+                padding-right: 15px;
             }
 
-            .top .sectitle {
-                font-size: 20px;
+            .sectitle {
+                font-size: 24px;
             }
 
+            /* Reduced height for mobile */
             .Aminities .imgBtn {
-                height: 100px;
+                height: 100px; 
+            }
+
+            /* 
+               TIGHTER MOBILE GRID 
+               Reduce gap to 5px on mobile to prevent 'weird gaps'
+            */
+            #amiBtn.row {
+                margin-right: -5px !important;
+                margin-left: -5px !important;
+            }
+
+            #amiBtn > div[class*='col-'] {
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+                margin-bottom: 15px !important;
             }
 
             .Aminities .amiOuter {
@@ -958,234 +1016,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 justify-content: center;
             }
             
-            /* Ensure columns have padding for the mosaic look */
-            .col-5, .col-7 {
-                padding-left: 5px;
-                padding-right: 5px;
-                margin-bottom: 15px;
+            .imgtext {
+                font-size: 14px;
             }
         }
     </style>
-
-    <!-- <div class="amenity-section p-100" id="amenities">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Amenities </h2>
-            </div>
-            <div class="section-subheading">
-                <h4>An Expansive Estate, Elegantly Poised For Your Indulgence</h4>
-            </div>
-            <div class="owl-carousel owl-theme" id="amenity-carousel">
-                <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/swimming-pool.jpg" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Swimming Pool</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/badminton.jpg" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Badminton</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/hall.jpg" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Banquet Hall</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/yoga.jpg" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Yoga</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-                 <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/kids.webp" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Kids Play Area</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-                 <div class="item">
-                    <div class="amenity-details">
-                        <div class="amnt-img">
-                            
-                            <img class="img-fluid" src="images/gym.webp" alt="">
-                            
-                            
-                        </div>
-                        <div class="amnt-content">
-                            <div class="content">
-                                <img class="img-fluid" src="images/dot-img.png" alt="">
-                                <p>Gym</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="floor-plan-section p-100" id="floor-plan">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Floor Plans </h2>
-            </div>
-            <div class="floor-plan-details">
-                <ul class="nav nav-pills floor-plan-tabs" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">4 BHK</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">5 BHK</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="one-bed-residences-details">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="one-bed-residences-content">
-                                        <div class="floor-details">
-                                            
-                                            <div class="points">
-                                                <img src="images/dot-img.png" alt="">
-                                                <p>Sizes: 3500 Sq.Ft.</p>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <div class="know-more-btn">
-                                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">View
-                                                Plan</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    
-                                    <div class="item">
-                                        <div class="floor-plan-carousel-details">
-                                            <div class="bed-residences-image" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-                                                <img class="img-fluid" src="images/lower.webp" alt="" style="filter: blur(4px)">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="one-bed-residences-details">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="one-bed-residences-content">
-                                        <div class="floor-details">
-                                            
-                                            <div class="points">
-                                                <img src="images/dot-img.png" alt="">
-                                                <p>Sizes: 7000 Sq.Ft.</p>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <div class="know-more-btn">
-                                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">View
-                                                Plan</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    
-                                    <div class="item">
-                                        <div class="floor-plan-carousel-details" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            <div class="bed-residences-image">
-
-                                                <img class="img-fluid" src="images/lower.webp" alt="" style="filter: blur(4px)">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
+  
     <div class="gallery-section p-100" id="visual-journey">
         <div class="container">
             <div class="section-heading">
@@ -1416,6 +1252,20 @@ document.addEventListener("DOMContentLoaded", function () {
                                     </div>
                                     <button class="submit_btn" id="SubmitQuery4">Submit Now</button>
                                 </div>
+                        <div class="text-center mt-3">
+                            <p>or</p>
+                            <a class="whats-pt0 countWhatsApp zoomIn" id="whatsappClick" href="https://wa.me/+918459396466?text=I’m interested in the Aditya Birla project. Please send brochure and price details." target="_blank">
+                                <div class="enquireNowBtn desktop-view" style="background: linear-gradient(195deg, #53d161, #23b73c);padding: 9.3px 30px;">
+                                    <img loading="lazy" alt="Lodha Wakad" src="images/whatapps-ico.png" id="blink-text" class="img-responsive center-block whatsapp-img"> Connect On WhatsApp
+                                </div>
+                            </a>
+
+                            <div class="slide-submit poppins-regular mobile-view">
+                                <button class="poppins-regular" id="slideContainer">
+                                    <img loading="lazy" alt="Lodha Wakad" src="images/swipe-arrow.png" id="slideIcon">
+                                </button>
+                                <label id="slideText">Slide to connect on WhatsApp</label>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1457,7 +1307,8 @@ document.addEventListener("DOMContentLoaded", function () {
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>    
-    
+    <script defer="" src="js/slide-to-submit.js"></script>
+
 
     <script type="text/javascript" language="javascript">
         var versionUpdate = (new Date()).getTime();
