@@ -513,15 +513,15 @@ a.navbar-call-btn:hover {color: #000;}
 h4.offer-banner {color: #000000;font-weight: 500;letter-spacing: 2px;width: fit-content;padding: 12px 60px;border-radius: 2px;margin: 0px auto 15px;background: #e7dbcf;backdrop-filter: blur(20px);font-family: var(--montserrat);border: 1px solid var(--primary-color);font-size: 13px;transition: 0.4s ease-in;}
 .offer-banner:hover {background: #e7dbcf;color: #000;}
 
-.mobileForm{border-top: 1px solid #c2bab16e;
+.mobileForm{border-top: 1px solid #3a7ca5;
   margin-top: 0px;
   padding: 30px 0;
   margin-bottom: 0px;
-  background: #e7dbcf;}
+  background: #e9f5fb;}
 .mobileForm .section-head{margin-bottom: 47px;}
 .mobileForm .footer_from{padding: 0 15px;}
 .mobileForm .form-group{margin-bottom: 14px;}
-.mobileForm .form-control{background: transparent;font-size: 14px;padding: 10px 14px;border: 0;border-bottom: 1px solid #cfbeac;border-radius: 0;}
+.mobileForm .form-control{background: transparent;font-size: 14px;padding: 10px 14px;border: 0;border-bottom: 1px solid #3a7ca5;border-radius: 0;}
 .mobileForm .project-overview_btn{padding: 8px 40px;background: var(--primary-color); border: 0; border-radius: 4px; color: #fff;}
 
 .new_typo {
@@ -772,7 +772,7 @@ div#about-developer {
     .banner-new-design { position: relative;bottom: unset;left: unset;transform: unset;margin-top: 15px;}
     .banner-new-design .banner_logo {width: 120px;filter: brightness(0) saturate(100%) invert(51%) sepia(50%) saturate(276%) hue-rotate(350deg) brightness(93%) contrast(85%); }
     .banner-new-design .address {padding: 15px 0;font-size: 25px;line-height: 21px;color: #000;font-weight: 500;}
-    .banner-new-design .banner-details div:not(:last-child) {border-right:none;border-bottom: 1px solid #c2b48e;}
+    .banner-new-design .banner-details div:not(:last-child) {border-right:none;border-bottom: 1px solid #3a7ca5;}
     .banner-new-design .banner-details { flex-direction: column;}
 
     .banner-new-design .banner-details .banner-status:hover,
@@ -782,7 +782,7 @@ div#about-developer {
 
     .banner-new-design .banner-details .banner-typology,
     .banner-new-design .banner-details .banner-plan {
-        background: #e7dbcf;
+        background: #f3f9fc;
     }
 
     .banner-new-design .banner-details .banner-status:hover h5,
@@ -816,7 +816,7 @@ div#about-developer {
     }
 
     .banner-new-design .banner-details {
-        border: 1px solid #c2b48ec9;
+        border: 1px solid #3a7ca5;
     }
 
     .banner-new-design .banner-details .banner-status h5,
