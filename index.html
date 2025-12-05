@@ -1061,10 +1061,6 @@ Prestige Nautilus blends tranquillity with urban sophistication—making it not 
                 height: 100px; 
             }
 
-            /* 
-               TIGHTER MOBILE GRID 
-               Reduce gap to 5px on mobile to prevent 'weird gaps'
-            */
             #amiBtn.row {
                 margin-right: -5px !important;
                 margin-left: -5px !important;
@@ -1237,7 +1233,22 @@ lifestyles across India.
             </div>
         </div>
     </div>
+<div class="bottom-fixed-bar">
+    <a class="call-btn" href="tel:+919619977711">
+        <img src="images/phone.png" alt="call">
+        <span>Call Now</span>
+    </a>
 
+    <a class="query-btn" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="images/query.png" alt="query">
+        <span>Ask Query</span>
+    </a>
+
+    <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=919619977711&text=Hello, Looking for Prestige Nautilus , Worli Dr Annie Besant Road Get in touch with me my name is" target="_blank">
+        <img src="images/whatsapp.png" alt="whatsapp">
+        <span>WhatsApp</span>
+    </a>
+</div>
     
 
       <section class="virtual_tour p-100">
@@ -1260,7 +1271,15 @@ lifestyles across India.
 
         </div>
     </section>
-
+    <div class="call-section d-none d-md-block">
+        <a href="tel:919619977711">
+            <img class="img-fluid" src="images/phone.png" alt="">
+        </a>
+    </div>
+    <div class="whatsapp-section d-none d-md-block">
+        <a href="https://api.whatsapp.com/send?phone=+919619977711 &text=Hello, Looking for Prestige Nautilus , Worli Dr  Annie Besant Road Get in touch with me my name is" target="_blank"> <img class="img-fluid" src="images/whatsapp.png" alt=""> </a>
+    </div>
+    
     <div class="footer-section p-80">
         <div class="container">
             <div class="footer-contact-number">
@@ -1369,32 +1388,22 @@ lifestyles across India.
             </div>
         </div>
     </div>
-    <div class="call-section d-none d-md-block">
-        <a href="tel:919619977711">
-            <img class="img-fluid" src="images/phone.png" alt="">
-        </a>
-    </div>
-    <div class="whatsapp-section d-none d-md-block">
-        <a href="https://api.whatsapp.com/send?phone=+919619977711 &text=Hello, Looking for Prestige Nautilus , Worli Dr  Annie Besant Road Get in touch with me my name is" target="_blank"> <img class="img-fluid" src="images/whatsapp.png" alt=""> </a>
-    </div>
+
     
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const bar = document.querySelector(".bottom-fixed-bar");
 
-<div class="mobile-section">
-    <a class="call-btn" href="tel:+919619977711">
-        <img src="images/phone.png" alt="call">
-        <span>Call Now</span>
-    </a>
+    let hasScrolled = false;
 
-    <a class="query-btn" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <img src="images/query.png" alt="query">
-        <span>Ask Query</span>
-    </a>
-
-    <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=919619977711&text=Hello, Looking for Prestige Nautilus , Worli Dr Annie Besant Road Get in touch with me my name is" target="_blank">
-        <img src="images/whatsapp.png" alt="whatsapp">
-        <span>WhatsApp</span>
-    </a>
-</div>
+    window.addEventListener("scroll", function () {
+        if (!hasScrolled && window.scrollY > 50) {
+            bar.classList.add("show");
+            hasScrolled = true;
+        }
+    });
+});
+</script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -1415,7 +1424,7 @@ lifestyles across India.
 
     <script>
         var AgentInfo = {
-            "vAgentID": "4936",
+            "vAgentID": "0000",
             "vProject": "Prestige Nautilis",
             "vURL": "https://prestige-one.vercel.app/",
         };
@@ -1754,6 +1763,7 @@ mobileSection.classList.add('show');
             });
         });
     </script>
+    
     <script>
         $('.asidebar li a').on('click', function (e) {
             var target = this.hash,
