@@ -463,7 +463,7 @@ a.navbar-call-btn:hover {color: #000;}
 .location-section .location-map-img {/* background: #706553; */padding: 0px 10px;border-radius: 10px;}
 
 /* About Developer */
-.developer-content {padding: 40px;text-align: center;}
+.developer-content {padding: 40px;text-align: left;}
 .developer-content p{font-size: 12px;line-height: 28px;}
 .footer-img {margin: 10px 50px;position: relative;}
 .footer-img img {border-radius: 10px;}
@@ -1281,4 +1281,151 @@ div#about-developer {
 }
 .newc{
     padding-top: 30px;
+}
+/* ---------- ABOUT SECTION ---------- */
+.about-section {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LEFT SIDE */
+.about-text {
+    width: 100%;
+}
+
+.about-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);   /* same as theme */
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.about-desc {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* CTA BUTTON — EXACTLY LIKE THE THEME */
+.about-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about-btn a {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+.about-btn img {
+    width: 20px;
+}
+
+.about-btn:hover {
+    background: var(--primary-color);
+}
+
+.about-btn:hover a {
+    color: #fff;
+}
+
+.about-btn:hover img {
+    filter: invert(1);
+}
+
+/* RIGHT SIDE VIDEO */
+.about-video img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.about-video img:hover {
+    opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-btn {
+        margin: 0 auto;
+    }
+}
+.footer-img img {
+  display: block;
+  margin: 0 auto;
+}
+/* Left Section Styling */
+.developer-content {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.developer-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.stats-list li {
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.stats-list li:last-child {
+    border-bottom: none;
+}
+
+/* ===========================
+   📱 Mobile Responsive CSS
+=========================== */
+@media (max-width: 767px) {
+    .developer-content {
+        padding: 5px;
+        border-radius: 0;
+    }
+
+    .developer-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .stats-list li {
+        font-size: 14px;
+        padding: 5px 0;
+    }
 }
