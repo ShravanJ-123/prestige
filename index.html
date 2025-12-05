@@ -734,9 +734,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <section class="Aminities" id="Aminities">
         <div class="container">
-            <div class="top">
-                <div class="sectitle HistoryPro appearText">Amenities</div>
+            <div class="section-heading">
+                <h2>Amenities</h2>
             </div>
+            <!-- <div class="top">
+                <div class="sectitle HistoryPro appearText">Amenities</div>
+            </div> -->
             <div class="amiOuter">
                 <div class="row">
                     <div class="col-md-12">
@@ -1254,7 +1257,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                         <div class="text-center mt-3">
                             <p>or</p>
-                            <a class="whats-pt0 countWhatsApp zoomIn" id="whatsappClick" href="https://wa.me/+918459396466?text=I’m interested in the Aditya Birla project. Please send brochure and price details." target="_blank">
+                            <a class="whats-pt0 countWhatsApp zoomIn" id="whatsappClick" href="https://wa.me/+919619977711?text=I’m interested in the Aditya Birla project. Please send brochure and price details." target="_blank">
                                 <div class="enquireNowBtn desktop-view" style="background: linear-gradient(195deg, #53d161, #23b73c);padding: 9.3px 30px;">
                                     <img loading="lazy" alt="Lodha Wakad" src="images/whatapps-ico.png" id="blink-text" class="img-responsive center-block whatsapp-img"> Connect On WhatsApp
                                 </div>
@@ -1322,8 +1325,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var AgentInfo = {
             "vAgentID": "4936",
             "vProject": "Prestige Nautilis",
-            "vURL": "https://nautilusworli-mumbai.com/",
-            // "thankspageurl": "https://nautilusworli-mumbai.com/thanks.htm",
+            "vURL": "https://prestige-one.vercel.app/",
         };
 
         //Needs to be duplicate in the case of multiple forms on the same page
@@ -1348,7 +1350,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let gcity = HiddenValues.vCity ? HiddenValues.vCity : '';
             let gip = HiddenValues.vIP ? HiddenValues.vIP : '';
             let giqguid = HiddenValues.iqGuid ? HiddenValues.iqGuid : '';
-            AgentInfo.thankspageurl = `https://nautilusworli-mumbai.com/thanks.htm?gtem=${gtem}>ph=${gtph}>nm=${gtnm}>pjt=${gtpjt}&aid=${aid}&gcity=${gcity}&gip=${gip}&giqguid=${giqguid}`
+            AgentInfo.thankspageurl = `https://prestige-one.vercel.app/`
 
             SubmitQueryData(AgentInfo, FormInfo);
         });
@@ -1370,7 +1372,6 @@ document.addEventListener("DOMContentLoaded", function () {
             let gcity = HiddenValues.vCity ? HiddenValues.vCity : '';
             let gip = HiddenValues.vIP ? HiddenValues.vIP : '';
             let giqguid = HiddenValues.iqGuid ? HiddenValues.iqGuid : '';
-            AgentInfo.thankspageurl = `https://nautilusworli-mumbai.com/thanks.htm?gtem=${gtem}>ph=${gtph}>nm=${gtnm}>pjt=${gtpjt}&aid=${aid}&gcity=${gcity}&gip=${gip}&giqguid=${giqguid}`
 
             SubmitQueryData(AgentInfo, FormInfo);
         });
@@ -1392,7 +1393,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let gcity = HiddenValues.vCity ? HiddenValues.vCity : '';
             let gip = HiddenValues.vIP ? HiddenValues.vIP : '';
             let giqguid = HiddenValues.iqGuid ? HiddenValues.iqGuid : '';
-            AgentInfo.thankspageurl = `https://nautilusworli-mumbai.com/thanks.htm?gtem=${gtem}>ph=${gtph}>nm=${gtnm}>pjt=${gtpjt}&aid=${aid}&gcity=${gcity}&gip=${gip}&giqguid=${giqguid}`
+            AgentInfo.thankspageurl = `https://prestige-one.vercel.app/`
 
             SubmitQueryData(AgentInfo, FormInfo);
         });
@@ -1414,7 +1415,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let gcity = HiddenValues.vCity ? HiddenValues.vCity : '';
             let gip = HiddenValues.vIP ? HiddenValues.vIP : '';
             let giqguid = HiddenValues.iqGuid ? HiddenValues.iqGuid : '';
-            AgentInfo.thankspageurl = `https://nautilusworli-mumbai.com/thanks.htm?gtem=${gtem}>ph=${gtph}>nm=${gtnm}>pjt=${gtpjt}&aid=${aid}&gcity=${gcity}&gip=${gip}&giqguid=${giqguid}`
+            AgentInfo.thankspageurl = `https://prestige-one.vercel.app/`
 
             SubmitQueryData(AgentInfo, FormInfo);
         });
@@ -1426,13 +1427,13 @@ document.addEventListener("DOMContentLoaded", function () {
             type: 'image',
             closeOnContentClick: true,
             closeBtnInside: false,
-            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+            mainClass: 'mfp-no-margins mfp-with-zoom', 
             image: {
                 verticalFit: true
             },
             zoom: {
                 enabled: true,
-                duration: 300 // don't foget to change the duration also in CSS
+                duration: 300 
             }
         });
 
@@ -1462,8 +1463,6 @@ document.addEventListener("DOMContentLoaded", function () {
             nav: true,
             dots: false,
             autoplay: false,
-            // autoplayTimeout: 5000,
-            // autoplaySpeed: 3000,
             autoplaySpeed: 800,
             slideTransition: 'linear',
             smartSpeed: 750,
