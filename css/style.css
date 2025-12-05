@@ -61,12 +61,55 @@ a{text-decoration: none!important;}
 
 p {letter-spacing: 1px;font-size: 13px;line-height: 26px;}
 
-.section-heading{position: relative;text-align: center;width: fit-content;margin: auto;padding: 0 50px;margin-bottom: 30px;}
-.section-heading::before {position: absolute;left: 50%;transform: translateX(-50%);bottom: -20px;width: 100%;height: 30%;content: '';background: url('../images/text-underline.svg') no-repeat center bottom;background-size: 100%;}
+/* .section-heading{position: relative;text-align: center;width: fit-content;margin: auto;padding: 0 50px;margin-bottom: 30px;} */
+/* .section-heading::before {position: absolute;left: 50%;transform: translateX(-50%);bottom: -20px;width: 100%;height: 30%;content: '';background: url('../images/text-underline.svg') no-repeat center bottom;background-size: 100%;} */
 .section-heading h2{color: var(--primary-color);font-weight: 500;letter-spacing: 2px;font-size: 32px;line-height: 38px;}
 
 .section-subheading h4 {text-align: center;letter-spacing: 2.5px;width: 70%;margin: auto;color: var(--primary-color);font-size: 26px;font-weight: 300;}
 .section-subheading.dark-color h4 {color: #000;letter-spacing: 3px; font-size: 32px;font-weight: 400;}
+.section-heading {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 15px; /* space for lines & dot */
+}
+
+/* LEFT LINE */
+.section-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45%;
+  height: 2px;
+  background-color: #3a7ca5;
+}
+
+/* RIGHT LINE */
+.section-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  height: 2px;
+  background-color: #3a7ca5;
+}
+
+/* CENTER DOT */
+.section-heading .dot {
+  position: absolute;
+  left: 50%;
+  bottom: -3px; /* sits exactly on the line */
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3a7ca5;
+  border-radius: 50%;
+}
+
+
 
 .enquireNowBtn {
   background: #988030;
@@ -750,8 +793,8 @@ div#about-developer {
     .desk-view{display: none;}
     
     p {font-size: 11px;line-height: 24px;}
-    .section-heading::before {height: 20%;width: 100%;}
-    .section-heading {margin-bottom: 40px;padding: 0 40px;}
+    /* .section-heading::before {height: 20%;width: 100%;} */
+    /* .section-heading {margin-bottom: 40px;padding: 0 40px;} */
     .section-heading h2 {font-size: 28px;line-height: 38px;}
     .section-subheading h4 {width: 100%;font-size: 22px;line-height: 36px;}
     .container {max-width: 90%;}
@@ -1207,4 +1250,31 @@ div#about-developer {
 
 }
 
+}
+@media (max-width: 600px) {
+
+  /* much smaller lines */
+  .section-heading::before,
+  .section-heading::after {
+    width: 45%;  /* smaller */
+    height: 1.5px; /* thinner */
+  }
+
+  /* much smaller dot */
+  .section-heading .dot {
+    width: 6px;
+    height: 6px;
+    bottom: -2px; /* slightly adjusted */
+  }
+
+  /* smaller heading text */
+  .section-heading h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* reduce padding below text */
+  .section-heading {
+    padding-bottom: 20px;
+  }
 }
