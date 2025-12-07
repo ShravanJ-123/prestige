@@ -367,7 +367,9 @@ a.navbar-call-btn:hover {color: #000;}
 .price-section .price-size p span.size {font-size: 20px;letter-spacing: 2px;font-family: var(--freight);font-weight: 300}
 .price-details .know-more-btn {/* padding: 10px 36px; */margin: 0 auto;}
 
-
+.bottom-fixed-bar {
+    display: none !important;
+}
 /* Amenity Section  */
 .owl-theme .owl-nav [class*='owl-']:hover {background: transparent !important;color: #FFF;text-decoration: none;}
 .owl-nav img{width: 80px;}
@@ -1033,6 +1035,7 @@ div#about-developer {
     font-weight: 500;
   }
    .bottom-fixed-bar {
+            display: flex !important;
         position: fixed;
         bottom: 0;
         left: 0;
